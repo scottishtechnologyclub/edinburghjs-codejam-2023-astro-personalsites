@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+const allParticipants = await getCollection("participants");
+---
+
+<div class="prose">
+  <h2 id="participants">Participants</h2>
+  <div class="mt-6 p-8 bg-neutral-100 rounded-md">
+    <ul>
+      {
+        allParticipants.map((p) => (
+          <li>
+            <a href={p.data.url}>{p.data.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <p>
+    To be added to this list please submit a PR to <a href="">this repo</a> with
+    your details.
+  </p>
+</div>

@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import GiggedLogo from '../assets/giggedlogo.svg';
+import CodebaseLogo from '../assets/codebaselogo.png';
+---
+<div class="prose my-6">
+  <h2 id="sponsors">Sponsors and thanks</h2>
+
+  <p>Thank you to Gigged.ai for sponsoring lunch for all our participants, and to CodeBase for providing refreshments and the venue.</p>
+
+  <div class="bg-neutral-100 p-8 mb-8 rounded-md">
+    <a href="https://gigged.ai/for-freelancers/"><Image src={GiggedLogo} alt="Gigged.ai Logo"/></a>
+    <p>Elevate your freelance journey with Gigged.AI! We're all about connecting talented freelancers like you with businesses in need of your unique skills and expertise with our skills-matching algorithm. Our platform opens doors to diverse projects, and over 500 top-tier clients offering a hassle-free payment process. Join Gigged.AI today and turn your freelance aspirations into a reality.</p>
+    <a href="https://gigged.ai/for-freelancers/">Gigged.ai for Freelancers</a>
+  </div>
+
+  <div class="bg-neutral-100 p-8 rounded-mb">
+    <a href="https://www.thisiscodebase.com/"><Image src={CodebaseLogo} alt="Codebase Logo"/></a>
+    <p><a href="https://www.thisiscodebase.com/">CodeBase</a> helps people build and grow better tech startups through community, education, and workspace. CodeBase promotes and facilitates collaboration in tech innovation by  working with startups, scaleups, corporates, governments, academia, investors and the third sector.</p>
+  </div>
+
+</div>
